@@ -9,7 +9,7 @@ A secure, role-based clinic management platform with an integrated EHR, audit tr
 - [Objectives](#objectives)
 - [System Architecture](#system-architecture)
 - [Database Design](#database-design)
-- [Secutity &amp; Middleware / Interceptors](#security--middleware-interceptors)
+- [Secutity &amp; Middlewares / Interceptors](#security--middleware-interceptors)
 - [Auditing &amp; Data Management](#auditing--data-management)
 - [User Interfaces](#user-interfaces)
 - [Tech Stack](#tech-stack)
