@@ -9,7 +9,7 @@ A secure, role-based clinic management platform with an integrated EHR, audit tr
 - [Objectives](#objectives)
 - [System Architecture](#system-architecture)
 - [Database Design](#database-design)
-- [Secutity &amp; Middleware / Interceptors](#security--middlewares-interceptors)
+- [Secutity &amp; Middleware / Interceptors](#security--middleware-interceptors)
 - [Auditing &amp; Data Management](#auditing--data-management)
 - [User Interfaces](#user-interfaces)
 - [Tech Stack](#tech-stack)
@@ -65,7 +65,7 @@ Bypassing rigid third-party architectural constraints ensures the codebase avoid
   - Compound operations with transactional side effects
   - Export operation involving an external library
 
-## Security and Middlewares / Interceptors
+## Security & Middlewares / Interceptors
 
 Security is enforced primarily through a chain of middleware intercepting every request before it reaches a controller. AuthMiddleware verifies an active session, AdminMiddleware restricts administrative routes to the Administrator role (enforcing the Segregation of Duties above), CsrfMiddleware validates a token on every state-changing request to protect against cross-site request forgery, and SessionTimeoutMiddleware terminates a user session after a predefined period of inactivity. Input sanitization is also handled at the middleware layer, before a request ever reaches a controller.
 
